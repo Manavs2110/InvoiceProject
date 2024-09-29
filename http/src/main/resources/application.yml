@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: bootcamp
+  data:
+    mongodb:
+      uri:
+  servlet:
+    multipart:
+      max-file-size: 100MB # Adjust this to the desired maximum file size
+      max-request-size: 100MB # Adjust this to the desired maximum request size
+  cloud:
+    aws:
+      credentials:
+        accessKey:
+        secretKey:
+      region:
+        static: ap-south-1
+      stack:
+        auto: false
+
+server:
+  port: 9097
+client-config:
+  base-url: http://localhost:9097
+
